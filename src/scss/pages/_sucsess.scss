@@ -1,0 +1,40 @@
+
+
+.sucsess {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 130px;
+
+    &__button {
+        margin-right: 90px;
+    }
+}
+
+.sucsess-info {
+    display: flex;
+    column-gap: 40px;
+    align-items: center;
+
+    &__img {
+        width: 33px;
+        height: 24px;
+        padding: 26px 20px;
+        border: 5px solid #6E9C9F;
+        border-radius: 15px;
+    }
+}
+
+.sucsess__text {
+        
+    &-title {
+        font-size: 25px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+
+    &-subtitle {
+        font-size: 17px;
+        font-weight: 500;
+    }
+}

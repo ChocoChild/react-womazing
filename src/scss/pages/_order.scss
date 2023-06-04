@@ -1,0 +1,137 @@
+.shop {
+    margin-bottom: 200px;
+}
+
+.order {
+    margin-bottom: 130px;
+}
+.order-desc {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-size: 25px;
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+
+    &__input {
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #6E9C9F;
+        padding: 10px 15px;
+        width: 350px;
+        margin-bottom: 15px;
+
+        &::placeholder {
+            font-size: 17px;
+            font-weight: 500;
+            opacity: 0.7;
+        }
+    }
+}
+
+.order-desc__order {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        font-size: 25px;
+        font-weight: 500;
+        margin-bottom: 60px;
+    }
+}
+
+.order__wrapper {
+    display: flex;
+    justify-content: center;
+    column-gap: 80px;
+
+    .order__name {
+        
+        .name__text {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+
+        .name__title {
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+
+    .order__count {
+
+        .count__text {
+            font-size: 17px;
+            font-weight: 500;
+            margin-bottom: 38px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .count__title {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+
+.order-adress {
+    display: flex;
+    justify-content: space-between;
+
+    &__user {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .order-adress__title {
+        font-size: 25px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+
+    &__input {
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #6E9C9F;
+        padding: 10px 15px;
+        width: 350px;
+        margin-bottom: 15px;
+
+        &::placeholder {
+            font-size: 17px;
+            font-weight: 500;
+            opacity: 0.7;
+        }
+    }
+
+    &__pay-method {
+        margin-right: 110px;
+        margin-top: 90px;
+
+        .pay-method__title {
+            font-size: 25px;
+            font-weight: 500;
+            margin-bottom: 45px;
+        }
+
+        .pay-method__subtitle {
+            font-size: 17px;
+            font-weight: 500;
+            margin-bottom: 45px;
+        }
+    }
+}

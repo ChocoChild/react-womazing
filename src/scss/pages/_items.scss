@@ -1,0 +1,115 @@
+.header {
+    margin-bottom: 110px;
+}
+
+.shop-items__character {
+    display: flex;
+    column-gap: 70px;
+    align-items: center;
+    margin-bottom: 130px;
+
+    .shop-items__select {
+
+        &-price {
+            margin-top: 20px;
+            margin-bottom: 50px;
+            font-size: 40px;
+            font-weight: 500;
+            color: #998E78;
+    
+            span {
+                margin-left: 10px;
+                text-decoration: line-through;
+                opacity: 0.5;
+            }
+        }
+    
+        &-text {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+
+        &-subtext {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+    
+        &-sizes {
+
+            button {
+                margin-bottom: 60px;
+                margin-right: 5px;
+                border: 1px solid #000;
+                padding: 9px 12px;
+            }
+        }
+    
+        &-color {
+            display: flex;
+            column-gap: 10px;
+            margin-bottom: 40px;
+
+            div {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            }
+            .brown {
+                background: #927876;
+            }
+    
+            .grey {
+                background: #D4D4D4;
+            }
+    
+            .red {
+                background: #FD9696;
+            }
+    
+            .yellow {
+                background: #FDC796;
+            }
+        }
+    
+        .active {
+            border: 1px solid #000;
+            opacity: 0.6;
+        }
+    }
+
+}
+
+.shop-items__busket {
+
+    .busket-count {
+        border: 1px solid #000;
+        padding: 20px 28px;
+        opacity: 0.4;
+        margin-right: 5px;
+    }
+
+    .busket-add {
+        padding: 22px 50px;
+        color: #fff;
+        background: #6E9C9F;
+
+        &:hover {
+            background: #3f6f72;
+            transition: ease 0.2s all;
+        }
+    }
+}
+
+.shop-items__others {
+    .shop-items__title {
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 60px;
+    }
+}
+
+.clothing-collection__images {
+    margin-bottom: 200px;
+}

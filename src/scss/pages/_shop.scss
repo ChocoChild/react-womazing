@@ -1,0 +1,105 @@
+.content {
+    margin-bottom: 200px;
+
+    &__title {
+        font-size: 55px;
+        font-weight: 500;
+        margin-bottom: 25px;
+    }
+}
+
+.content-nav-list {
+    display: flex;
+    column-gap: 40px;
+
+    &__item {
+        position: relative;
+        font-size: 17px;
+        font-weight: 500;
+
+        &:after {
+            content: " ";
+            background: #333333;
+            width: 15px;
+            height: 2px;
+            bottom: 7px;
+            right: -28px;
+            position: absolute;
+        }
+    }
+
+    &__item3 {
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    .activate {
+        opacity: 0.5;
+    }
+}
+
+.shop__category {
+    margin-bottom: 90px;
+
+    &-button {
+        margin-right: 5px;
+        border: 1px solid #000;
+        padding: 19px 65px;
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    .active-shop {
+        background: #000;
+        color: #fff;
+    }
+}
+
+.shop__items {
+    &-title {
+        font-size: 17px;
+        font-weight: 500;
+        opacity: 0.5;
+        margin-bottom: 65px;
+    }
+}
+
+.clothing-collection {
+    
+    &__images {
+        margin-bottom: 70px;
+    }
+    &__item {
+        p {
+            text-align: center;
+        }
+    }
+}
+
+.shop__pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+    margin-bottom: 120px;
+
+    &-prev {
+        font-size: 26px;
+        font-weight: 500;
+    }
+
+    &-next {
+        font-size: 26px;
+        font-weight: 500;
+    }
+
+    &-button {
+        border: 1px solid #000;
+        padding: 9px 16px;
+    }
+
+    .activate {
+        background: #000;
+        color: #fff;
+    }
+}

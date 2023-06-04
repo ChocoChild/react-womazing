@@ -1,0 +1,124 @@
+.basket {
+    margin-bottom: 200px;
+}
+
+.basket__product {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &:after {
+        content: " ";
+        background: #CCCCCC;
+        opacity: 0.6;
+        width: 1235px;
+        height: 2px;
+        bottom: -26px;
+        right: -28px;
+        position: absolute;
+    }
+}
+
+.basket__product-index {
+    display: flex;
+    column-gap: 150px;
+
+    .basket__product-title {
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+.basket__item {
+    margin-bottom: 350px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &-image {
+        display: flex;
+        column-gap: 40px;
+        text-align: center;
+        align-items: center;
+        position: absolute;
+        bottom: -250px;
+        left: 0;
+    }
+
+    &-count {
+        display: flex;
+        column-gap: 215px;
+        text-align: left;
+        position: absolute;
+        right: 0;
+        bottom: -194px;
+
+        button {
+            border: 1px solid #00000025;
+            padding: 10px 16px;
+        }
+    }
+
+    .count-price {
+        font-size: 17px;
+        font-weight: 500;
+    }
+}
+
+.basket-action {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+
+    &__input {
+        display: flex;
+        column-gap: 10px;
+
+        input {
+            width: 250px;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid #6E9C9F;
+
+            &::placeholder {
+                font-size: 17px;
+                font-weight: 500;
+                opacity: 0.7;
+            }
+        }
+    }
+
+    &__refresh {
+        
+        button {
+            padding: 20px 50px;
+            border: 1px solid #6E9C9F;
+            color: #6E9C9F;
+
+            &:hover {
+                border: 1px solid #59b8be;
+                color: #59b8be;
+                transition: ease 0.2s all;
+            }
+        }
+    }
+}
+
+.basket-order {
+    margin-bottom: 70px;
+    &__text {
+        display: flex;
+        justify-content: end;
+        column-gap: 10px;
+
+        .text__title {
+            background: #F1EADC;
+            padding: 20px 60px 20px 31px;
+            height: 100%;
+
+            span {
+                margin-left: 69px;
+            }
+        }
+    }
+}

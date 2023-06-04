@@ -1,0 +1,245 @@
+// Header
+
+.none {
+    display: none;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    position: relative;
+    margin-top: 54px;
+
+    &__img {
+        position: absolute;
+        top: -54px;
+        right: 0;
+        width: 705px;
+        height: 826px;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 70px;
+    }
+
+    &__logo {
+        display: flex;
+        column-gap: 15px;
+
+        &-img {
+            height: 20px;
+            width: 20px;
+        }
+
+        &-description {
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+    }
+
+    &__nav {
+
+        &-list {
+            display: flex;
+            column-gap: 45px;
+
+            a {
+                font-weight: 400;
+                font-size: 15px;
+                color: #000;
+
+                &:hover {
+                    transition: ease-in 0.1s all;
+                    color: #6E9C9F;
+                }
+            }
+        }
+    }
+
+    .active {
+        color: #6E9C9F;
+    }
+
+    &__contacts {
+        position: relative;
+
+        &-img {
+            position: absolute;
+            top: 0;
+            left: -21px;
+        }
+
+        &-link {
+            margin-left: 20px;
+            font-size: 15px;
+            font-weight: 400;
+            color: #000;
+        }
+    }
+
+    &__cart {
+        z-index: 99;
+        transform: translateX(-100px);
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 150px;
+    }
+
+    &__subtitle {
+        font-size: 55px;
+        font-weight: 500;
+        margin-bottom: 45px;
+    }
+
+    &__text {
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 52px;
+    }
+
+    &__content-pic {
+        position: relative;
+
+        &__image2 {
+            transform: translate(60px, -25px);
+        }
+
+        &__image1 {
+            position: relative;
+            z-index: 999;
+            transform: translate(130px, 28px);
+        }
+
+        &__image3 {
+            z-index: 999;
+            transform: translate(-30px, 105px);
+            position: absolute;
+
+        }
+    }
+}
+
+.content-buttons {
+    position: relative;
+
+    &__picture {
+        padding: 16px 26px;
+        background: rgba(110, 156, 159, 0.1);
+
+        &:hover {
+            background: rgba(97, 135, 138, 0.1);
+            transition: ease 0.2s all;
+        }
+    }
+
+    &__button {
+        position: absolute;
+        top: 2px;
+        left: 69px;
+    }
+}
+
+.button {
+    padding: 22px 50px;
+    background: #6E9C9F;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+        background: #527c80;
+        transition: ease 0.2s all;
+    }
+}
+
+.clothing {
+
+    &-collection {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 130px;
+
+        &__title {
+            font-size: 40px;
+            font-weight: 500;
+            margin-bottom: 60px;
+        }
+
+        &__images {
+            display: flex;
+            column-gap: 25px;
+        }
+
+        &__item {
+            position: relative;
+
+            a {
+                display: block;
+                position: relative;
+                margin-bottom: 20px;
+        
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    background: rgba(71, 122, 128, 0.6);
+                    opacity: 0;
+                }
+        
+                &:hover:after {
+                    opacity: 0.8;
+                    transition: ease 0.2s all;
+                }
+            }
+
+            &__desc {
+                font-size: 20px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+
+            span {
+                opacity: 0.5;
+            }
+        }
+
+        &__button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 60px;
+            margin-right: 100px;
+        }
+    }
+}
+.span {
+    text-decoration: line-through;
+    opacity: .5;
+}
+
+.button-opacity {
+    
+    border: 2px solid #6E9C9F;
+    padding: 22px 45px;
+    color: #6E9C9F;
+    cursor: pointer;
+
+    &:hover {
+        border: 2px solid #3c5f63;
+        color: #3c5f63;
+        transition: ease 0.2s all;
+    }
+}

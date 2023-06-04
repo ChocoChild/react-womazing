@@ -1,0 +1,36 @@
+.header {
+    margin-bottom: 190px;
+}
+
+.brand-desc{
+    margin-bottom: 200px;
+    display: flex;
+    column-gap: 90px;
+    align-items: center;
+    margin-bottom: 120px;
+
+    &__text {
+        .text__title {
+            font-size: 55px;
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
+
+        .text__subtitle {
+            font-size: 17px;
+            font-weight: 500;
+        }
+    }
+
+    .active {
+        opacity: 0.5;
+    }
+    
+    &__button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 150px;
+    }
+}
