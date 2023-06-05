@@ -8,6 +8,10 @@ import item3 from "../../img/clothing/clothing3.png"
 
 
 function Shop() {
+
+    window.scrollTo(0, 0);
+
+    
     return (
         <div>
             <Header />
@@ -88,10 +92,10 @@ function Shop() {
                     </div>
 
                     <div class="shop__pages">
-                        <button class="shop__pages-prev"></button>
+                        <button class="shop__pages-prev">&larr;</button>
                         <button class="shop__pages-button activate">1</button>
                         <button class="shop__pages-button">2</button>
-                        <button class="shop__pages-next"></button>
+                        <button class="shop__pages-next">&rarr;</button>
                     </div>
                 </div>
             </div>

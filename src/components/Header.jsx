@@ -34,7 +34,9 @@ function Header() {
                 <a className="header__contacts-link" href="$!">+7 (495) 823-54-12</a>
             </div>
             <div className="header__cart">
+                <Link to="/basket">
                 <img className="header__cart-basket" src={cart} alt="cart"></img>
+                </Link>
             </div>
         </div>
     </div>

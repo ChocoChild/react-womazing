@@ -25,17 +25,28 @@ import { Link } from 'react-router-dom';
 
 function Content() {
     const [navList, setNavList] = React.useState(0);
+    const [footerList, setFooterList] = React.useState(0);
     const list = ["Главная", "Магазин", "О бренде", "Контакты"];
+
+    const goToClothing = () => {
+        window.scrollTo({
+            top: 850,
+            behavior: "smooth"
+        })
+    }
+
+    React.useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return (
         <div>
             <div className="header">
-                <img className="header__img" src={bgColor} alt="Dress"></img>
                 <div className="container">
                     <div className="header__wrapper">
                         <div className="header__logo">
                             <Link to="/">
-                            <img className="header__logo-img" src={dress} alt="Dress"></img>
+                                <img className="header__logo-img" src={dress} alt="Dress"></img>
                             </Link>
                             <p className="header__logo-description">Womazing</p>
                         </div>
@@ -55,21 +66,24 @@ function Content() {
                         </div>
                         <div className="header__cart">
                             <Link to="/basket">
-                            <img className="header__cart-basket" src={cart} alt="cart"></img>
+                                <img className="header__cart-basket" src={cart} alt="cart"></img>
                             </Link>
                         </div>
                     </div>
+                </div>
+                <img className="header__img" src={bgColor} alt="Dress"></img>
+                <div className="container">
                     <div className="header__content">
                         <div className="header__content-desc">
                             <h1 className="header__subtitle">Новые поступления <br></br> в этом сезоне</h1>
                             <p className="header__text">Утонченные сочетания и бархатные <br></br> оттенки - вот то, что вы искали в этом <br></br> сезоне. Время
                                 исследовать.</p>
                             <div className="content-buttons">
-                                <button className="content-buttons__picture">
+                                <button onClick={goToClothing} className="content-buttons__picture">
                                     <img src={down} alt="vector-down"></img>
                                 </button>
                                 <Link to="/shop">
-                                <button className="button content-buttons__button">Открыть магазин</button>
+                                    <button className="button content-buttons__button">Открыть магазин</button>
                                 </Link>
                             </div>
                         </div>
@@ -104,7 +118,9 @@ function Content() {
                             </div>
                         </div>
                         <div className="clothing-collection__button">
-                            <button className="button-opacity">Открыть магазин</button>
+                            <Link to="/shop">
+                                <button className="button-opacity">Открыть магазин</button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -143,14 +159,15 @@ function Content() {
                                     <h3 className="text__title">Для каждой</h3>
                                     <p className="text__subtitle">Каждая девушка идеальна. Однако мы схожи в миллионе мелочей.</p>
                                     <p className="text__subtitle">Womazing ищет эти мелочи и создает прекраные вещи, которые выгодно подчеркивают достоинства каждой девушки.</p>
+                                    <Link to="/about">
                                     <a className="text__link" href="#!">Подробнее о бренде</a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
             <div class="footer__wrapper">
             <div class="container">
                 <div class="footer">
@@ -165,8 +182,8 @@ function Content() {
                             {list.map((obj, i) => 
                             <li
                             key={i}
-                            onClick={() => setNavList(i)}
-                            ><a class={navList ===  i ?  'active' : ''} href="#!">{obj}</a></li>
+                            onClick={() => setFooterList(i)}
+                            ><a class={footerList ===  i ?  'active' : ''} href="#!">{obj}</a></li>
                             )}
                         </ul>
                     </div>
