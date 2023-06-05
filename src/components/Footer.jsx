@@ -5,6 +5,7 @@ import footerIcon from "../img/footer/instagram.svg"
 import footerIcon2 from "../img/footer/facebook.svg"
 import footerIcon3 from "../img/footer/twitter.png"
 import visa from "../img/footer/visa.svg"
+import { Link } from 'react-router-dom'
 
 function Footer() {
     const [footerList, setFooterList] = React.useState(0)
@@ -14,7 +15,9 @@ function Footer() {
             <div class="container">
                 <div class="footer">
                     <div class="footer__logo">
+                        <Link to="/">
                         <img class="footer__logo-img" src={dress} alt="logo"></img>
+                        </Link>
                         <h3 class="footer__logo-title">Womazing</h3>
                     </div>
                     <div class="footer__nav">

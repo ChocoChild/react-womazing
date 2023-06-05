@@ -1,21 +1,20 @@
 import React from 'react';
 
 import './scss/style.scss';
-import Header from './components/Header';
-import Clothing from './components/Clothing';
-import About from './components/About';
-import Footer from './components/Footer';
+import Home from './components/Home';
+import Basket from "./components/pages/Basket"
+import { Routes, Route } from 'react-router-dom';
+import Shop from './components/pages/Shop';
 
 
 
 function App() {
   return (
-    <div>
-    <Header />
-    <Clothing />
-    <About />
-    <Footer />
-    </div>
+    <Routes>
+      <Route path="/" element={ <Home /> } />
+      <Route path="/basket" element={ <Basket />}/> 
+      <Route path="/shop" element={ <Shop /> } />
+    </Routes>
   );
 }
 
