@@ -21,11 +21,13 @@ import footerIcon2 from "../img/footer/facebook.svg"
 import footerIcon3 from "../img/footer/twitter.png"
 import visa from "../img/footer/visa.svg"
 import { Link } from 'react-router-dom';
+import ModalWindow from './ModalWindow';
 
 
 function Content() {
     const [navList, setNavList] = React.useState(0);
     const [footerList, setFooterList] = React.useState(0);
+    const [reguestCall, setReguestCall] = React.useState(false)
     const list = ["Главная", "Магазин", "О бренде", "Контакты"];
 
     const goToClothing = () => {
@@ -42,6 +44,7 @@ function Content() {
     return (
         <div>
             <div className="header">
+                <img className="header__img" src={bgColor} alt="Dress"></img>
                 <div className="container">
                     <div className="header__wrapper">
                         <div className="header__logo">
@@ -62,7 +65,7 @@ function Content() {
                         </div>
                         <div className="header__contacts">
                             <img className="header__contacts-img" src={telephone} alt="telephone"></img>
-                            <a className="header__contacts-link" href="$!">+7 (495) 823-54-12</a>
+                            <button className="header__contacts-link" onClick={() => setReguestCall(true)}>+7 (495) 823-54-12</button>
                         </div>
                         <div className="header__cart">
                             <Link to="/basket">
@@ -71,7 +74,6 @@ function Content() {
                         </div>
                     </div>
                 </div>
-                <img className="header__img" src={bgColor} alt="Dress"></img>
                 <div className="container">
                     <div className="header__content">
                         <div className="header__content-desc">
@@ -125,7 +127,7 @@ function Content() {
                     </div>
                 </div>
             </section>
-
+            <ModalWindow reguestCall={reguestCall} setReguestCall={setReguestCall} />
             <section className="about">
                 <div className="container">
                     <div className="about">

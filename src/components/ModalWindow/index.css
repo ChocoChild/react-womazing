@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+.modal {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(110, 156, 159, 0.95);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    transition: 0.5s;
+    display: none;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal__content {
+    background-color: white;
+    width: 490px;
+    height: 505px;
+    position: relative;
+}
+
+.modal__content-img {
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    cursor: pointer;
+}
+
+.modal__content-title {
+    font-size: 25px;
+    font-weight: 500;
+    font-family: "Raleaway", sans-serif;
+    position: absolute;
+    top: 80px;
+    left: 87px;
+}
+
+.modal__content-inputs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+.modal__content-input {
+    margin-left: 60px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #6E9C9F;
+    padding: 10px 15px;
+    width: 330px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    position: absolute;
+    bottom: 70px;
+    left: 120px;
+    padding: 22px 50px;
+    background: #6E9C9F;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #527c80;
+    transition: ease 0.2s all;
+}
