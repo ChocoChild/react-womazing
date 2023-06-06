@@ -1,0 +1,41 @@
+.root {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(110, 156, 159, 0.95);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    transition: 0.5s;
+    display: none;
+}
+
+.root.active {
+    display: flex;
+    transition: 0.5s;
+}
+
+.root__callback {
+    background: white;
+    width: 600px;
+    height: 278px;
+    position: relative;
+}
+
+.root__callback-title {
+    font-size: 25px;
+    font-weight: 500;
+    font-family: "Raleaway", sans-serif;
+    position: absolute;
+    top: 80px;
+    left: 87px;
+}
+
+.button-opacity.root__callback-button {
+    position: absolute;
+    bottom: 40px;
+    left: 185px;
+}

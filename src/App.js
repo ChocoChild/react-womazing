@@ -7,6 +7,7 @@ import { Routes, Route } from 'react-router-dom';
 import Shop from './components/pages/Shop';
 import AboutUs from './components/pages/AboutUs';
 import ModalWindow from './components/ModalWindow';
+import ModalCallback from './components/ModalCallback';
 
 
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/shop" element={<Shop />} />
         <Route path="/about" element={ <AboutUs />} />
         <Route path="modal" element={ <ModalWindow />} />
+        <Route path="/modalcallback" element={ <ModalCallback /> } />
       </Routes>
     </div>
   );
