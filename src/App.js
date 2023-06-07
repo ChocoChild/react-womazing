@@ -8,6 +8,7 @@ import Shop from './components/pages/Shop';
 import AboutUs from './components/pages/AboutUs';
 import ModalWindow from './components/ModalWindow';
 import ModalCallback from './components/ModalCallback';
+import axios from 'axios';
 
 
 

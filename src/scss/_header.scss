@@ -185,6 +185,15 @@
             column-gap: 25px;
         }
 
+        &__items {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            grid-column-gap: 25px;
+            grid-row-gap: 30px;
+
+        }
+
         &__item {
             position: relative;
             cursor: pointer;
@@ -193,7 +202,7 @@
                 display: block;
                 position: relative;
                 margin-bottom: 20px;
-        
+
                 &:after {
                     content: "";
                     position: absolute;
@@ -204,7 +213,7 @@
                     background: rgba(71, 122, 128, 0.6);
                     opacity: 0;
                 }
-        
+
                 &:hover:after {
                     opacity: 0.8;
                     transition: ease 0.2s all;
@@ -231,13 +240,15 @@
         }
     }
 }
+
+
 .span {
     text-decoration: line-through;
     opacity: .5;
 }
 
 .button-opacity {
-    
+
     border: 2px solid #6E9C9F;
     padding: 22px 45px;
     color: #6E9C9F;

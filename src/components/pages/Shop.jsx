@@ -2,100 +2,52 @@ import React from 'react'
 import Header from "../Header"
 import Footer from "../Footer"
 
-import item from "../../img/clothing/clothing1.png"
-import item2 from "../../img/clothing/clothing2.png"
-import item3 from "../../img/clothing/clothing3.png"
+import axios from 'axios'
+import ShopItems from '../ShopItems';
 
 
 function Shop() {
-
-    window.scrollTo(0, 0);
-
+    const [items, setItems] = React.useState([]);
+    const [selectCategory, setSelectCategory] = React.useState(0)
+    const category = ['Все', 'Пальто', 'Свитшоты', 'Кардиганы', 'Толстовки'];
     
+    React.useEffect(() => {
+        axios.get("http://localhost:3000/closes.json").then((res) => {
+            setItems(res.data)
+        })
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
         <div>
             <Header />
-            <div class="container">
-                <div class="content">
-                    <h2 class="content__title">Магазин</h2>
-                    <div class="content-nav-list">
-                        <p class="content-nav-list__item">Главная</p>
-                        <p class="activate content-nav-list__item3">Магазин</p>
+            <div className="container">
+                <div className="content">
+                    <h2 className="content__title">Магазин</h2>
+                    <div className="content-nav-list">
+                        <p className="content-nav-list__item">Главная</p>
+                        <p className="activate content-nav-list__item3">Магазин</p>
                     </div>
                 </div>
 
-                <div class="shop__category">
-                    <button class="shop__category-button active-shop">Все</button>
-                    <button class="shop__category-button">Пальто</button>
-                    <button class="shop__category-button">Свитшоты</button>
-                    <button class="shop__category-button">Кардиганы</button>
-                    <button class="shop__category-button">Толстовки</button>
+                <div className="shop__category">
+                    {category.map((obj, i) =>
+                        <button 
+                        key={i}
+                        onClick={() => setSelectCategory(i)} 
+                        className={selectCategory === i ? "shop__category-button active-shop" : "shop__category-button"}>{obj}</button>
+                    )}
                 </div>
 
-                <div class="shop__items">
-                    <h4 class="shop__items-title">Показано: 9 из 12 товаров</h4>
-                    <div class="clothing-collection__images">
-                        <div class="clothing-collection__item">
-                            <a href="#!"><img class="clothing--collection__item-image" src={item}
-                                alt="Dress"></img></a>
-                            <p>Футболка USA <br></br> <span class="span">$229</span> <span>$129</span>
-                            </p>
-                        </div>
-                        <div class="clothing-collection__item">
-                            <a href="#!"><img class="clothing-collection__item-image" src={item2}
-                                alt="Dress"></img></a>
-                            <p>Купальник Glow <br></br> <span>$59</span></p>
-                        </div>
-                        <div class="clothing-collection__item">
-                            <a href="#!"><img class="clothing-collection__item-image" src={item3}
-                                alt="Dress"></img></a>
-                            <p>Свитшот Sweet Shot <br></br> <span>$89</span></p>
-                        </div>
-                    </div>
+                <div className="shop__items">
+                    <h4 className="shop__items-title">Показано: 9 из 12 товаров</h4>
+                    <ShopItems items={items} />
 
-                    <div class="clothing-collection__images">
-                        <div class="clothing-collection__item">
-                            <a href="#!"><img class="clothing--collection__item-image" src={item}
-                                alt="Dress"></img></a>
-                            <p>Футболка USA <br></br> <span class="span">$229</span> <span>$129</span>
-                            </p>
-                        </div>
-                        <div class="clothing-collection__item">
-                            <a href="#!"><img class="clothing-collection__item-image" src={item2}
-                                alt="Dress"></img></a>
-                            <p>Купальник Glow <br></br> <span>$59</span></p>
-                        </div>
-                        <div class="clothing-collection__item">
-                            <a href="#!"><img class="clothing-collection__item-image" src={item3}
-                                alt="Dress"></img></a>
-                            <p>Свитшот Sweet Shot <br></br> <span>$89</span></p>
-                        </div>
-                    </div>
-
-                    <div class="clothing-collection__images">
-                        <div class="clothing-collection__item">
-                            <a href="#!"><img class="clothing--collection__item-image" src={item}
-                                alt="Dress"></img></a>
-                            <p>Футболка USA <br></br> <span class="span">$229</span> <span>$129</span>
-                            </p>
-                        </div>
-                        <div class="clothing-collection__item">
-                            <a href="#!"><img class="clothing-collection__item-image" src={item2}
-                                alt="Dress"></img></a>
-                            <p>Купальник Glow <br></br> <span>$59</span></p>
-                        </div>
-                        <div class="clothing-collection__item">
-                            <a href="#!"><img class="clothing-collection__item-image" src={item3}
-                                alt="Dress"></img></a>
-                            <p>Свитшот Sweet Shot <br></br> <span>$89</span></p>
-                        </div>
-                    </div>
-
-                    <div class="shop__pages">
-                        <button class="shop__pages-prev">&larr;</button>
-                        <button class="shop__pages-button activate">1</button>
-                        <button class="shop__pages-button">2</button>
-                        <button class="shop__pages-next">&rarr;</button>
+                    <div className="shop__pages">
+                        <button className="shop__pages-prev">&larr;</button>
+                        <button className="shop__pages-button activate">1</button>
+                        <button className="shop__pages-button">2</button>
+                        <button className="shop__pages-next">&rarr;</button>
                     </div>
                 </div>
             </div>
