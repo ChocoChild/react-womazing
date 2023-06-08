@@ -1,86 +1,88 @@
-[
-	{
-		"id": 1,
-		"name": "Пальто",
-		"imageUrl": "https://milanova.com.ua/wp-content/uploads/2022/01/pv-246kemel-400x600.jpg",
-		"price": 54,
-		"category": 3
-	},
-	{
-		"id": 2,
-		"name": "Пальто",
-		"imageUrl": "https://hardy.com.ua/image/cache/catalog/product/09-10-20/159-03-01-400x600.jpg",
-		"price": 45,
-		"category": 3
-	},
-	{
-		"id": 3,
-		"name": "Пальто",
-		"imageUrl": "https://static.insales-cdn.com/r/LG54yFTjj1g/rs:fit:600:600:1/plain/images/collections/1/2470/91204006/IMG_5892.JPEG@webp",
-		"price": 38,
-		"category": 3
-	},
-	{
-		"id": 4,
-		"name": "Свитшот",
-		"imageUrl": "https://natalibolgar.com/upload/resize_cache/imagick/iblock/e9b/400x600q93-EmptyName-122.jpg",
-		"price": 25,
-		"category": 2
-	},
-	{
-		"id": 5,
-		"name": "Свитшот",
-		"imageUrl": "https://yuki.ua/content/images/20/400x600l95nn0/94725990057889.jpeg",
-		"price": 18,
-		"category": 2
-	},
-	{
-		"id": 6,
-		"name": "Свитшот",
-		"imageUrl": "https://escaparate.kz/files/resized/products/img_0023_251.800x600.jpg",
-		"price": 35,
-		"category": 2
-	},
-	{
-		"id": 7,
-		"name": "Кардиган",
-		"imageUrl": "https://i.pinimg.com/474x/1f/d2/4c/1fd24c0501ca5573eac5d8193995cd1d.jpg",
-		"price": 18,
-		"category": 4
-	},
-	{
-		"id": 8,
-		"name": "Кардиган",
-		"imageUrl": "https://www.intimissimi.com/dw/image/v2/BHHR_PRD/on/demandware.static/-/Sites-INT_EC_COM/default/dw8328c969/images/CLD905A2106-M.jpg?sw=400&sfrm=jpeg",
-		"price": 40,
-		"category": 4
-	},
-	{
-		"id": 9,
-		"name": "Кардиган",
-		"imageUrl": "https://eliseevaolesya.com/storage/small/7d0b5f98-1410-11eb-8152-04d4c4d254f5.jpeg?rnd=8926",
-		"price": 28,
-		"category": 4
-	},
-	{
-		"id": 10,
-		"name": "Тостовка",
-		"imageUrl": "https://malinovka-shop.com/wa-data/public/shop/products/62/40/4062/images/7239/7239.400x0.jpg",
-		"price": 54,
-		"category": 5
-	},
-	{
-		"id": 11,
-		"name": "Толстовка",
-		"imageUrl": "https://malinovka-shop.com/wa-data/public/shop/products/73/40/4073/images/6192/6192.400x0.jpg",
-		"price": 76,
-		"category": 5
-	},
-	{
-		"id": 12,
-		"name": "Толстовка",
-		"imageUrl": "https://vishenka.in.ua/image/cache/catalog/Seventeen/5/upload-iblock-077-0777f5a75017541373daaccb40967ce8-400x600.jpg",
-		"price": 66,
-		"category": 5
-	}
-]
+{
+	"closes" : [
+		{
+			"id": 1,
+			"name": "Пальто",
+			"imageUrl": "https://milanova.com.ua/wp-content/uploads/2022/01/pv-246kemel-400x600.jpg",
+			"price": 54,
+			"category": 3
+		},
+		{
+			"id": 2,
+			"name": "Пальто",
+			"imageUrl": "https://hardy.com.ua/image/cache/catalog/product/09-10-20/159-03-01-400x600.jpg",
+			"price": 45,
+			"category": 3
+		},
+		{
+			"id": 3,
+			"name": "Пальто",
+			"imageUrl": "https://static.insales-cdn.com/r/LG54yFTjj1g/rs:fit:600:600:1/plain/images/collections/1/2470/91204006/IMG_5892.JPEG@webp",
+			"price": 38,
+			"category": 3
+		},
+		{
+			"id": 4,
+			"name": "Свитшот",
+			"imageUrl": "https://natalibolgar.com/upload/resize_cache/imagick/iblock/e9b/400x600q93-EmptyName-122.jpg",
+			"price": 25,
+			"category": 2
+		},
+		{
+			"id": 5,
+			"name": "Свитшот",
+			"imageUrl": "https://yuki.ua/content/images/20/400x600l95nn0/94725990057889.jpeg",
+			"price": 18,
+			"category": 2
+		},
+		{
+			"id": 6,
+			"name": "Свитшот",
+			"imageUrl": "https://escaparate.kz/files/resized/products/img_0023_251.800x600.jpg",
+			"price": 35,
+			"category": 2
+		},
+		{
+			"id": 7,
+			"name": "Кардиган",
+			"imageUrl": "https://i.pinimg.com/474x/1f/d2/4c/1fd24c0501ca5573eac5d8193995cd1d.jpg",
+			"price": 18,
+			"category": 4
+		},
+		{
+			"id": 8,
+			"name": "Кардиган",
+			"imageUrl": "https://www.intimissimi.com/dw/image/v2/BHHR_PRD/on/demandware.static/-/Sites-INT_EC_COM/default/dw8328c969/images/CLD905A2106-M.jpg?sw=400&sfrm=jpeg",
+			"price": 40,
+			"category": 4
+		},
+		{
+			"id": 9,
+			"name": "Кардиган",
+			"imageUrl": "https://eliseevaolesya.com/storage/small/7d0b5f98-1410-11eb-8152-04d4c4d254f5.jpeg?rnd=8926",
+			"price": 28,
+			"category": 4
+		},
+		{
+			"id": 10,
+			"name": "Тостовка",
+			"imageUrl": "https://malinovka-shop.com/wa-data/public/shop/products/62/40/4062/images/7239/7239.400x0.jpg",
+			"price": 54,
+			"category": 5
+		},
+		{
+			"id": 11,
+			"name": "Толстовка",
+			"imageUrl": "https://malinovka-shop.com/wa-data/public/shop/products/73/40/4073/images/6192/6192.400x0.jpg",
+			"price": 76,
+			"category": 5
+		},
+		{
+			"id": 12,
+			"name": "Толстовка",
+			"imageUrl": "https://vishenka.in.ua/image/cache/catalog/Seventeen/5/upload-iblock-077-0777f5a75017541373daaccb40967ce8-400x600.jpg",
+			"price": 66,
+			"category": 5
+		}
+	]
+}

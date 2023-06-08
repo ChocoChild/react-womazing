@@ -4,17 +4,20 @@ import Footer from "../Footer"
 
 import axios from 'axios'
 import ShopItems from '../ShopItems';
+import Loading from '../Loading';
 
 
 function Shop() {
+    const [isLoading, setIsLoading] = React.useState(true)
     const [items, setItems] = React.useState([]);
     const [selectCategory, setSelectCategory] = React.useState(0)
     const category = ['Все', 'Пальто', 'Свитшоты', 'Кардиганы', 'Толстовки'];
     
     React.useEffect(() => {
-        axios.get("http://localhost:3000/closes.json").then((res) => {
-            setItems(res.data)
-        })
+        axios.get("http://localhost:3001/closes").then(({data}) => {
+            setItems(data);
+            setIsLoading(false);
+        }) 
         window.scrollTo(0, 0)
     }, [])
 
@@ -41,7 +44,10 @@ function Shop() {
 
                 <div className="shop__items">
                     <h4 className="shop__items-title">Показано: 9 из 12 товаров</h4>
-                    <ShopItems items={items} />
+                    {isLoading
+                      ? [...new Array(6)].map((_, index) => <Loading />)
+                      : <ShopItems items={items} />
+                    }
                 </div>
             </div>
             <Footer />
