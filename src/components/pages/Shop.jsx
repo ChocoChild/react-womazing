@@ -42,13 +42,6 @@ function Shop() {
                 <div className="shop__items">
                     <h4 className="shop__items-title">Показано: 9 из 12 товаров</h4>
                     <ShopItems items={items} />
-
-                    <div className="shop__pages">
-                        <button className="shop__pages-prev">&larr;</button>
-                        <button className="shop__pages-button activate">1</button>
-                        <button className="shop__pages-button">2</button>
-                        <button className="shop__pages-next">&rarr;</button>
-                    </div>
                 </div>
             </div>
             <Footer />

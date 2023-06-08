@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ModalWindow from './ModalWindow';
+import { useSelector, useDispatch } from 'react-redux';
 
 import bgColor from "../img/header/bg-color.png";
 import dress from "../img/header/dress.svg"
@@ -21,10 +22,12 @@ import footerIcon from "../img/footer/instagram.svg"
 import footerIcon2 from "../img/footer/facebook.svg"
 import footerIcon3 from "../img/footer/twitter.png"
 import visa from "../img/footer/visa.svg"
+import { selectCategory } from '../redux/navigationSlice';
 
 
-function Content() {
-    const [navList, setNavList] = React.useState(0);
+function Home() {
+    const categoryId = useSelector(state => state.navigation.categoryId);
+    const dispatch = useDispatch()
     const [footerList, setFooterList] = React.useState(0);
     const [reguestCall, setReguestCall] = React.useState(false)
     const list = ["Главная", "Магазин", "О бренде", "Контакты"];
@@ -52,11 +55,11 @@ function Content() {
                         </div>
                         <div className="header__nav">
                             <ul className="header__nav-list">
-                                {list.map((arr, i) =>
+                                {list.map((obj, i) =>
                                     <li
                                         key={i}
-                                        onClick={() => setNavList(i)}
-                                        className="list__item"><a className={navList === i ? 'active' : ''} href="#!">{arr}</a></li>
+                                        onClick={() => dispatch(selectCategory(i))}
+                                        className="list__item"><a className={categoryId === i ? 'active' : ''} href="#!">{obj}</a></li>
                                 )}
                             </ul>
                         </div>
@@ -158,9 +161,7 @@ function Content() {
                                     <h3 className="text__title">Для каждой</h3>
                                     <p className="text__subtitle">Каждая девушка идеальна. Однако мы схожи в миллионе мелочей.</p>
                                     <p className="text__subtitle">Womazing ищет эти мелочи и создает прекраные вещи, которые выгодно подчеркивают достоинства каждой девушки.</p>
-                                    <Link to="/about">
-                                    <a className="text__link" href="#!">Подробнее о бренде</a>
-                                    </Link>
+                                    <Link to="/about" className="text__link" href="#!">Подробнее о бренде</Link>
                                 </div>
                             </div>
                         </div>
@@ -216,4 +217,4 @@ function Content() {
     )
 }
 
-export default Content
+export default Home
