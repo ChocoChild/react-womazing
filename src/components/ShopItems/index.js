@@ -1,7 +1,7 @@
 import React from 'react'
 import Pagination from '../Pagination'
 
-function ShopItems({ items }) {
+function ShopItems({ items, setCurrentPage, currentPage }) {
 
     return (
         <div className="clothing-collection__items">
@@ -15,7 +15,7 @@ function ShopItems({ items }) {
                     </p>
                 </div>
             )}
-            <Pagination />
+            <Pagination onChangePage={(number) => setCurrentPage(number)} value={currentPage} />
         </div>
     )
 }
