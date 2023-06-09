@@ -23,43 +23,106 @@
 		},
 		{
 			"id": 4,
+			"name": "Пальто",
+			"imageUrl": "https://milanova.com.ua/wp-content/uploads/2023/04/pv184black-400x600.jpg",
+			"price": 87,
+			"category": 1
+		},
+		{
+			"id": 5,
+			"name": "Пальто",
+			"imageUrl": "https://hardy.com.ua/image/cache/catalog/product/21-02-24/205/205-03-01-400x600.jpg",
+			"price": 58,
+			"category": 1
+		},
+		{
+			"id": 6,
+			"name": "Пальто",
+			"imageUrl": "https://1001dress.ru/upload/resize_cache/iblock/0fa/400_600_2/0fa0614c3b78ce8b20e5065afd4dd329.jpg",
+			"price": 67,
+			"category": 1
+		},
+		{
+			"id": 7,
 			"name": "Свитшот",
 			"imageUrl": "https://natalibolgar.com/upload/resize_cache/imagick/iblock/e9b/400x600q93-EmptyName-122.jpg",
 			"price": 25,
 			"category": 2
 		},
 		{
-			"id": 5,
+			"id": 8,
 			"name": "Свитшот",
 			"imageUrl": "https://yuki.ua/content/images/20/400x600l95nn0/94725990057889.jpeg",
 			"price": 18,
 			"category": 2
 		},
 		{
-			"id": 6,
+			"id": 9,
 			"name": "Свитшот",
 			"imageUrl": "https://escaparate.kz/files/resized/products/img_0023_251.800x600.jpg",
 			"price": 35,
 			"category": 2
 		},
 		{
-			"id": 7,
+			"id": 10,
+			"name": "Свитшот",
+			"imageUrl": "https://ricamare.com.ua/upload/iblock/721/38m0daq6fd6moobjzz9ucipl9lariwhm.jpg",
+			"price": 25,
+			"category": 2
+		},
+		{
+			"id": 11,
+			"name": "Свитшот",
+			"imageUrl": "https://natalibolgar.com/upload/resize_cache/imagick/iblock/84b/400x600q93-V1203.jpg",
+			"price": 18,
+			"category": 2
+		},
+		{
+			"id": 12,
+			"name": "Свитшот",
+			"imageUrl": "https://evdress.com/upload/iblock/97b/97b4ba2a3fecd92b00affcb33628bad2.jpg",
+			"price": 35,
+			"category": 2
+		},
+		{
+			"id": 13,
 			"name": "Кардиган",
 			"imageUrl": "https://i.pinimg.com/474x/1f/d2/4c/1fd24c0501ca5573eac5d8193995cd1d.jpg",
 			"price": 18,
 			"category": 3
 		},
 		{
-			"id": 8,
+			"id": 14,
 			"name": "Кардиган",
 			"imageUrl": "https://www.intimissimi.com/dw/image/v2/BHHR_PRD/on/demandware.static/-/Sites-INT_EC_COM/default/dw8328c969/images/CLD905A2106-M.jpg?sw=400&sfrm=jpeg",
 			"price": 40,
 			"category": 3
 		},
 		{
-			"id": 9,
+			"id": 15,
 			"name": "Кардиган",
 			"imageUrl": "https://eliseevaolesya.com/storage/small/7d0b5f98-1410-11eb-8152-04d4c4d254f5.jpeg?rnd=8926",
+			"price": 28,
+			"category": 3
+		},
+		{
+			"id": 16,
+			"name": "Кардиган",
+			"imageUrl": "https://fly-line.ru/upload/resize_cache/iblock/5c5/600_600_140cd750bba9870f18aada2478b24840a/ud06yz7ya6q3tho57rqpiunuwetvhtxt.jpg",
+			"price": 18,
+			"category": 3
+		},
+		{
+			"id": 17,
+			"name": "Кардиган",
+			"imageUrl": "https://www.intimissimi.com/dw/image/v2/BHHR_PRD/on/demandware.static/-/Sites-INT_EC_COM/default/dwbd7ab4a8/images/CL139C019-FI.jpg?sw=400&sfrm=jpeg",
+			"price": 40,
+			"category": 3
+		},
+		{
+			"id": 18,
+			"name": "Кардиган",
+			"imageUrl": "https://1001dress.ru/upload/resize_cache/iblock/33f/400_600_2/33f6a2b61843eb85e6f0b720366b742e.jpg",
 			"price": 28,
 			"category": 3
 		},
@@ -81,6 +144,27 @@
 			"id": 12,
 			"name": "Толстовка",
 			"imageUrl": "https://vishenka.in.ua/image/cache/catalog/Seventeen/5/upload-iblock-077-0777f5a75017541373daaccb40967ce8-400x600.jpg",
+			"price": 66,
+			"category": 4
+		},
+		{
+			"id": 10,
+			"name": "Тостовка",
+			"imageUrl": "https://mila37.ru/wa-data/public/shop/products/31/06/631/images/780/780.600.jpg",
+			"price": 54,
+			"category": 4
+		},
+		{
+			"id": 11,
+			"name": "Толстовка",
+			"imageUrl": "https://magazin-tolstovok.ru/image//catalog/image/oversize/hoodie-oversize-black-small-1.jpg",
+			"price": 76,
+			"category": 4
+		},
+		{
+			"id": 12,
+			"name": "Толстовка",
+			"imageUrl": "https://imperialmoda.ru/image/cache/catalog/21.3imp/fb91bcrsti1-400x600.jpg",
 			"price": 66,
 			"category": 4
 		}

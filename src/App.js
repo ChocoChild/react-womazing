@@ -8,6 +8,7 @@ import Shop from './components/pages/Shop';
 import AboutUs from './components/pages/AboutUs';
 import ModalWindow from './components/ModalWindow';
 import ModalCallback from './components/ModalCallback';
+import Item from './components/Item';
 
 
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/about" element={ <AboutUs />} />
         <Route path="modal" element={ <ModalWindow />} />
         <Route path="/modalcallback" element={ <ModalCallback /> } />
+        <Route path="/currentItem" element={ <Item />} />
       </Routes>
     </div>
   );

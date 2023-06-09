@@ -20,12 +20,12 @@ function Shop() {
         const categoryId = `${selectCategory > 0 ? `category=${selectCategory}` : ''}`
 
         setIsLoading(true)
-        axios.get(`http://localhost:3001/closes?_page=${currentPage}&_limit=3${categoryId}`)
+        axios.get(`http://localhost:3001/closes?_page=${currentPage}&_limit=6&${categoryId}`)
         .then(({data}) => {
             setItems(data);
             setIsLoading(false);
+            window.scrollTo(0, 0)
         }) 
-        window.scrollTo(0, 0)
     }, [selectCategory, currentPage])
 
     console.log(currentPage)
