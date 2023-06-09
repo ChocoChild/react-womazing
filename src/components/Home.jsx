@@ -22,15 +22,15 @@ import footerIcon from "../img/footer/instagram.svg"
 import footerIcon2 from "../img/footer/facebook.svg"
 import footerIcon3 from "../img/footer/twitter.png"
 import visa from "../img/footer/visa.svg"
-import { selectCategory } from '../redux/navigationSlice';
+import { selectNavCategory } from '../redux/navigationSlice';
 
 
 function Home() {
-    const categoryId = useSelector(state => state.navigation.categoryId);
+    const categoryId = useSelector(state => state.navigation.navCategoryId);
     const dispatch = useDispatch()
     const [footerList, setFooterList] = React.useState(0);
     const [reguestCall, setReguestCall] = React.useState(false)
-    const list = ["Главная", "Магазин", "О бренде", "Контакты"];
+    const list = ["Главная","Магазин","О бренде", "Контакты"]
 
     const goToClothing = () => {
         window.scrollTo({
@@ -55,12 +55,12 @@ function Home() {
                         </div>
                         <div className="header__nav">
                             <ul className="header__nav-list">
-                                {list.map((obj, i) =>
+                                {list.map((obj, i) => (
                                     <li
                                         key={i}
-                                        onClick={() => dispatch(selectCategory(i))}
-                                        className="list__item"><a className={categoryId === i ? 'active' : ''} href="#!">{obj}</a></li>
-                                )}
+                                        onClick={() => dispatch(selectNavCategory(i))}
+                                        className="list__item"><Link className={categoryId === i ? 'active' : ''}>{obj}</Link></li>
+                                ))}
                             </ul>
                         </div>
                         <div className="header__contacts">

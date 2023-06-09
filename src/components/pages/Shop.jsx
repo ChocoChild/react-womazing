@@ -12,14 +12,18 @@ function Shop() {
     const [items, setItems] = React.useState([]);
     const [selectCategory, setSelectCategory] = React.useState(0)
     const category = ['Все', 'Пальто', 'Свитшоты', 'Кардиганы', 'Толстовки'];
+
+
     
     React.useEffect(() => {
-        axios.get("http://localhost:3001/closes").then(({data}) => {
+        setIsLoading(true)
+        axios.get(`http://localhost:3001/closes?${selectCategory > 0 ? `category=${selectCategory}` : ''}`)
+        .then(({data}) => {
             setItems(data);
             setIsLoading(false);
         }) 
         window.scrollTo(0, 0)
-    }, [])
+    }, [selectCategory])
 
     return (
         <div>
@@ -43,9 +47,9 @@ function Shop() {
                 </div>
 
                 <div className="shop__items">
-                    <h4 className="shop__items-title">Показано: 9 из 12 товаров</h4>
+                    <h4 className="shop__items-title">Показано: 6 из 12 товаров</h4>
                     {isLoading
-                      ? [...new Array(6)].map((_, index) => <Loading />)
+                      ? [...new Array(6)].map((_, index) => <Loading key={index} />)
                       : <ShopItems items={items} />
                     }
                 </div>

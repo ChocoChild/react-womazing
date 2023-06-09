@@ -1,18 +1,21 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+
+
+
 const initialState = {
-    categoryId: 0,
+    navCategoryId: 0,
 }
 
 const navigationSlice = createSlice({
     name: 'navigation',
     initialState,
     reducers : {
-        selectCategory(state, action) {
-            state.categoryId = action.payload
-        }
+        selectNavCategory(state, action) {
+            state.navCategoryId = action.payload
+        },
     }
 })
 
-export const { selectCategory } = navigationSlice.actions;
+export const { selectNavCategory, setPageRoadList } = navigationSlice.actions;
 export default navigationSlice.reducer;
